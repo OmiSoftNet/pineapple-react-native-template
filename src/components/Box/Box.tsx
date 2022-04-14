@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from './styles';
-import {PanGestureHandler} from 'react-native-gesture-handler';
+import {Gesture, GestureDetector} from 'react-native-gesture-handler';
 import Animated, {
-  useAnimatedGestureHandler,
   useAnimatedStyle,
   useSharedValue,
   withSpring,
@@ -17,20 +16,19 @@ import {
 const Box: React.FC = () => {
   const boxX = useSharedValue(BOX_START_X_POSITION);
   const boxY = useSharedValue(BOX_START_Y_POSITION);
+  const context = useSharedValue({x: 0, y: 0});
 
-  const panGestureEvent = useAnimatedGestureHandler({
-    onStart: (event, context) => {
-      context.x = boxX.value;
-      context.y = boxY.value;
-    },
-    onActive: (event, context) => {
-      const eventX = event.translationX + context.x;
-      const eventY = event.translationY + context.y;
+  const panGesture = Gesture.Pan()
+    .onStart(() => {
+      context.value = {x: boxX.value, y: boxY.value};
+    })
+    .onUpdate(event => {
+      const eventX = event.translationX + context.value.x;
+      const eventY = event.translationY + context.value.y;
 
       boxX.value = eventX;
       boxY.value = eventY;
-    },
-  });
+    });
 
   const animatedBox = useAnimatedStyle(
     () => ({
@@ -43,11 +41,11 @@ const Box: React.FC = () => {
   );
 
   return (
-    <PanGestureHandler onGestureEvent={panGestureEvent}>
+    <GestureDetector gesture={panGesture}>
       <Animated.View style={[styles.container, animatedBox]}>
         <Pineapple width={64} height={64} color={theme.colors.white} />
       </Animated.View>
-    </PanGestureHandler>
+    </GestureDetector>
   );
 };
 
