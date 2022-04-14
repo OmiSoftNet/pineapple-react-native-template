@@ -1,6 +1,6 @@
 import axios from 'axios';
 import {API_URL} from '~config/api';
-import {storage} from '~helpers/storage';
+import {keychain} from '~helpers/keychain';
 
 const defaultConfig = {
   baseURL: API_URL,
@@ -9,7 +9,7 @@ const defaultConfig = {
 export const axiosApi = axios.create(defaultConfig);
 
 axiosApi.interceptors.request.use(async config => {
-  const tokens = await storage.token.get();
+  const tokens = await keychain.token.get();
 
   if (tokens) {
     config.headers!.authorization = `Bearer ${tokens.accessToken}`;
@@ -20,9 +20,9 @@ axiosApi.interceptors.request.use(async config => {
 
 axiosApi.interceptors.response.use(
   res => res,
-  err => {
+  async err => {
     if (err.response.status === 401) {
-      storage.token.clear();
+      await keychain.token.clear();
     }
 
     return Promise.reject(err.response?.data ?? err.message);
