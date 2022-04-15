@@ -40,3 +40,8 @@ This template is integrated with [Flipper](https://fbflipper.com) to debug an ap
 ### Flipper plugins
 - [react-navigation](https://reactnavigation.org/docs/devtools/)
 - [redux-flipper](https://www.npmjs.com/package/redux-flipper)
+
+# 📚 Useful resources
+
+- [🌅 Splash screen & AppIcon generator](https://appicon.co)
+- [🧬 Convert SVG to React Native component](https://react-svgr.com/playground/?native=true)
