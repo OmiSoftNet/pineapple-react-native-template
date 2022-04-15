@@ -11,6 +11,8 @@ import {useLoginMutation} from '~services/api/auth';
 import {useAppDispatch} from '~hooks/store/useAppDispatch';
 import {authenticateUser} from '~store/auth/auth.slice';
 import Box from '~components/Box';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import styles from './styles';
 
 const {Email, Password} = LogInFields;
 
@@ -35,9 +37,9 @@ const Login: React.FC = () => {
   const isSubmitDisabled = !formik.isValid;
 
   return (
-    <View>
+    <GestureHandlerRootView style={styles.container}>
       <Box />
-    </View>
+    </GestureHandlerRootView>
   );
 };
 
