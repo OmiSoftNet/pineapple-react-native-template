@@ -20,8 +20,18 @@
 - [SVG Transformer](https://github.com/kristerkari/react-native-svg-transformer) - Use SVG as components
 - [RN Flipper](react-native-flipper) - Enable Flipper debugger
 
-# 🙈 Setup 
+# 🙈 Setup
 
+##  Main branch
+1. Install dependencies & pods
+<pre>
+<code>npm i && cd ios && pod install</code>
+</pre>
+2. Build a project with XCode or Android Studio
+3. Make some coffee while project is building☕️
+4. Run Metro bundler (if it's not opened yet) and run an application 
+
+## Core branch
 1. Create a new project with TypeScript template:
 <pre>
 <code>npx react-native init AwesomeTSProject --template react-native-template-typescript</code>
@@ -32,6 +42,7 @@
 5. [Configure Reanimated 2 for Android](https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/installation#android)
 6. Install dependencies
 7. Install pods
+8. Build a project with XCode or Android Studio
 
 # 🐛 Debug 
 
