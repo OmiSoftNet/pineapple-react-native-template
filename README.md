@@ -1,6 +1,6 @@
-<img src="./images/pineapple_github.jpg" alt="mvp structure" width="500">
+<img src="./images/pineapple_github.jpg" alt="mvp structure" width="600">
 
-# 🍍 Pineapple RN template
+# 🍍 Pineapple React Native template
 
 # 🐸 Dependencies 
 - [Async Storage](https://www.npmjs.com/package/@react-native-async-storage/async-storage) - Key-value storage
@@ -64,8 +64,8 @@ This template is integrated with [Flipper](https://fbflipper.com) to debug an ap
 
 If you have any suggestions or questions feel free to make a Pull Request or contact us!
 
-#### Run by
-OmiSoft [OmiSoft](https://omisoft.net/?utm_source=github&utm_medium=social)
+## Run by
+[OmiSoft](https://omisoft.net/?utm_source=github&utm_medium=social)
 
 [1]: http://www.twitter.com/omisoftnet
 [2]: http://www.facebook.com/omisoftnet
