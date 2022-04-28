@@ -1,3 +1,5 @@
+<img src="./images/pineapple_github.jpg" alt="mvp structure" width="500">
+
 # 🍍 Pineapple RN template
 
 # 🐸 Dependencies 
@@ -56,3 +58,21 @@ This template is integrated with [Flipper](https://fbflipper.com) to debug an ap
 
 - [🌅 Splash screen & AppIcon generator](https://appicon.co)
 - [🧬 Convert SVG to React Native component](https://react-svgr.com/playground/?native=true)
+
+[![alt text][1.1]][1]
+[![alt text][2.1]][2]
+
+If you have any suggestions or questions feel free to make a Pull Request or contact us!
+
+#### Run by
+OmiSoft [OmiSoft](https://omisoft.net/?utm_source=github&utm_medium=social)
+
+[1]: http://www.twitter.com/omisoftnet
+[2]: http://www.facebook.com/omisoftnet
+
+[1.1]: http://i.imgur.com/wWzX9uB.png (twitter icon without padding)
+[2.1]: http://i.imgur.com/fep1WsG.png (facebook icon without padding)
+
+## License
+Android Bluetooth Low Energy App is released under the MIT license.  
+See the [LICENSE](./LICENSE.md) for details.
