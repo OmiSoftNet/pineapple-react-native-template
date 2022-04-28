@@ -1,6 +1,6 @@
-<img src="./images/pineapple_github.jpg" alt="mvp structure" width="600">
+<img src="./images/pineapple_github.jpg" alt="mvp structure" width="800">
 
-# 🍍 Pineapple React Native template
+# 🍍 Pineapple ReactNative template
 
 # 🐸 Dependencies 
 - [Async Storage](https://www.npmjs.com/package/@react-native-async-storage/async-storage) - Key-value storage
@@ -74,5 +74,5 @@ If you have any suggestions or questions feel free to make a Pull Request or con
 [2.1]: http://i.imgur.com/fep1WsG.png (facebook icon without padding)
 
 ## License
-Android Bluetooth Low Energy App is released under the MIT license.  
+ReactNative PineApple Template is released under the MIT license.  
 See the [LICENSE](./LICENSE.md) for details.
